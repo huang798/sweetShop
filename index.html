@@ -8,128 +8,33 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
   </head>
   <body>
-    <div class="navbar">
+    <div class="pc_menu">
       <div class="navbar_left"><img src="images/logo-all-dark.svg" alt=""></div>
-      <div class="navbar_right"><a href="#">首頁</a><a href="#">甜點</a><a href="#">登入</a><a href="#" id="shopping_cart"><i class="material-icons">shopping_cart</i></a></div>
+      <div class="navbar_right"><a class="ls" href="#">首頁</a><a class="ls" href="#">甜點</a><a class="ls" href="#">登入</a><a href="#" id="shopping_cart"><i class="material-icons">shopping_cart</i></a></div>
+    </div>
+    <div class="mobile_menu">
+      <div class="hamburger"><span></span></div>
+      <div class="icon"><img src="images/logo-all-dark.svg" alt=""></div><a href="#" id="shopping_cart"><i class="material-icons">shopping_cart</i></a>
     </div>
     <div class="header">
       <div class="image_wrap"></div>
       <div class="selection">
         <div class="items_wrap">
-          <p>本日精選</p>
-          <div class="item" id="recommend_item"></div>
+          <div class="blur_bg" id="blur_pic1"></div>
+          <div class="text">
+            <p>本日精選</p>
+          </div>
         </div>
         <div class="items_wrap">
-          <p>人氣推薦</p>
-          <div class="item_cover"></div>
-          <div class="item" id="popular_item"></div>
+          <div class="blur_bg" id="blur_pic2"></div>
+          <div class="text">
+            <p>人氣推薦</p>
+          </div>
         </div>
         <div class="items_wrap">
-          <p>新品上市</p>
-          <div class="item_cover"></div>
-          <div class="item" id="new_item"></div>
-        </div>
-      </div>
-    </div>
-    <div class="intro_wrap">
-      <div class="why" id="why_make">
-        <div class="content_wrap">
-          <div class="img" id="make_img"></div>
-          <div class="textbox">
-            <p>青山依舊在，幾度夕陽紅。慣看秋月春，一壺酌酒喜相逢，浪花淘盡英雄。是非轉頭空，滾滾長江東逝水，白髮魚樵江古今多少事，都付笑談中。</p>
-            <p>是非成敗轉頭空，滾滾長江東逝水，白樵江渚上，古今多少事，都付笑談中。</p>
-          </div>
-          <div class="text_img" id="make_textImg"></div>
-        </div>
-      </div>
-      <div class="why" id="why_eat">
-        <div class="content_wrap">
-          <div class="textbox">
-            <p>青山依舊在，幾度夕陽紅。慣看秋月春，一壺酌酒喜相逢，浪花淘盡英雄。是非轉頭空，滾滾長江東逝水，白髮魚樵江古今多少事，都付笑談中。</p>
-            <p>是非成敗轉頭空，滾滾長江東逝水，白樵江渚上，古今多少事，都付笑談中。</p>
-          </div>
-          <div class="text_img" id="eat_textImg"></div>
-          <div class="img" id="eat_image"></div>
-        </div>
-      </div>
-      <div class="reasonImg_wrap"></div>
-    </div>
-    <div class="DailySpecial_wrap">
-      <div class="today_item">
-        <div class="top">
-          <div class="img" id="todaySpecial_img1"></div>
-          <div class="tag">
-            <p>本日精選</p>
-          </div>
-          <div class="loved"></div>
-        </div>
-        <div class="bottom">
-          <div class="item_name">焦糖馬卡龍</div>
-          <div class="price">NT$ 450</div>
-          <div class="addToCart">加入購物車</div>
-        </div>
-      </div>
-      <div class="today_item">
-        <div class="top">
-          <div class="img" id="todaySpecial_img2"></div>
-          <div class="tag">
-            <p>本日精選</p>
-          </div>
-          <div class="loved"></div>
-        </div>
-        <div class="bottom">
-          <div class="item_name">焦糖馬卡龍</div>
-          <div class="price">NT$ 450</div>
-          <div class="addToCart">加入購物車</div>
-        </div>
-      </div>
-      <div class="today_item">
-        <div class="top">
-          <div class="img" id="todaySpecial_img3"></div>
-          <div class="tag">
-            <p>本日精選</p>
-          </div>
-          <div class="loved"></div>
-        </div>
-        <div class="bottom">
-          <div class="item_name">焦糖馬卡龍</div>
-          <div class="price">NT$ 450</div>
-          <div class="addToCart">加入購物車</div>
-        </div>
-      </div>
-    </div>
-    <div class="email_wrap">
-      <div class="container">
-        <div id="left_part">
-          <div id="icon">
-            <p>訂閱你我的甜蜜郵件</p>
-          </div>
-        </div>
-        <div id="right_part">
-          <div class="email_wrap"><i class="material-icons">email</i></div>
-          <input type="email">
-          <div class="btn"><i class="material-icons">arrow_forward</i></div>
-        </div>
-      </div>
-    </div>
-    <div class="footer">
-      <div id="info_wrap">
-        <div id="left_info">
-          <div class="icon"></div>
-          <div class="shop_info">
-            <p>07-1234-5678</p>
-            <p>sweetaste@email.com</p>
-            <p>800 高雄市新興區幸福路 520 號</p>
-          </div>
-          <div class="link">
-            <div id="email"></div>
-            <div id="facebook"></div>
-          </div>
-        </div>
-        <div id="right_slogan">
-          <div id="slogan"></div>
-          <div id="right_reserved">
-            <p>© 2018 Sweetaste* All Rights Reserved</p>
+          <div class="blur_bg" id="blur_pic1"></div>
+          <div class="text">
+            <p>新品上市</p>
           </div>
         </div>
       </div>
