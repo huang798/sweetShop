@@ -483,6 +483,9 @@ html, body {
     margin-bottom: 30px;
     background-color: #EAF0ED;
     border: none; }
+    @media screen and (max-width: 576px) {
+      .email_wrap input {
+        width: 180px; } }
   .email_wrap .email_wrap {
     position: absolute;
     height: 56px;
@@ -511,6 +514,9 @@ html, body {
     @media screen and (max-width: 992px) {
       .email_wrap .btn {
         bottom: 114px; } }
+    @media screen and (max-width: 576px) {
+      .email_wrap .btn {
+        left: 180px; } }
     .email_wrap .btn .material-icons {
       height: 16px;
       width: 16px;
